@@ -10,18 +10,28 @@ namespace MovieManagement.Domain.Entities
     public class Movie : BaseEntity
     {
         public MovieTitle Title { get; private set; } = null!;
+
+        public Synopsis Synopsis { get; private set; } = null!;
+
+        public Duration Duration { get; private set; } = null!;
         public DateTime ReleaseDate { get; private set; }
 
         private Movie() { }
 
-        public  Movie(MovieTitle title, DateTime releaseDate)
+        public  Movie(MovieTitle title,Synopsis synopsis ,Duration duration ,DateTime releaseDate)
         {
             if(title is null)
             {
                 throw new DomainException("Movie title is required");
             }
 
-            if(releaseDate > DateTime.UtcNow)
+            if (synopsis is null)
+                throw new DomainException("Synopsis required.");
+
+            if (duration is null)
+                throw new DomainException("Duration required.");
+
+            if (releaseDate > DateTime.UtcNow)
             {
                 throw new DomainException("Release Date cannot be in the feature");
             }
