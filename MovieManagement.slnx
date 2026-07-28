@@ -1,1 +1,9 @@
-<Solution />
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/MovieManagement.Domain/MovieManagement.Domain.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+</Solution>
