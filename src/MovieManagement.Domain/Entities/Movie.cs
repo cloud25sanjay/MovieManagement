@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MovieManagement.Domain.Entities
 {
-    public class Movie : BaseEntity
+    public class Movie : AggregateRoot
     {
         public MovieTitle Title { get; private set; } = null!;
 
