@@ -5,6 +5,7 @@
   <Folder Name="/src/">
     <Project Path="src/MovieManagement.Application/MovieManagement.Application.csproj" Id="9d55a439-4bbe-47ea-a31d-6182cad99174" />
     <Project Path="src/MovieManagement.Domain/MovieManagement.Domain.csproj" />
+    <Project Path="src/MovieManagement.Infrastructure/MovieManagement.Infrastructure.csproj" Id="c3a272a5-de48-4ade-b96b-638dbe56dea1" />
   </Folder>
   <Folder Name="/tests/" />
 </Solution>
